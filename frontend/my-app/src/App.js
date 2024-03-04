@@ -5,7 +5,7 @@ function App() {
   // its search SearchBar
   return (
     <div>
-      
+      <h1>my name is ashwin</h1>
       <SearchBar />
     </div>
   );
