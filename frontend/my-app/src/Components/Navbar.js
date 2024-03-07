@@ -2,6 +2,7 @@ import React, { useEffect, useState, } from "react";
 import makeStyles from "@mui/styles/makeStyles";
 import logo from "./png-clipart-computer-icons-menu-bar-icon-design-hamburger-button-others-miscellaneous-angle-removebg-preview.png";
 import profile_logo from "./download-removebg-preview.png";
+import AuthModal from "./AuthModal";
 export default function Navbar() {
   const [searchbar_college, setclgval] = useState("Search by College");
   const [searchbar_clubs, setclubval] = useState("Search by Clubs");
@@ -114,15 +115,16 @@ export default function Navbar() {
           </div>
         </div>
 
-        <li className={classes.for_probut} >
-          <div>
-           { hover_on_profile ? `Login` :<img src={logo} className={classes.for_menu}></img> }
+        {/* <li className={classes.for_probut} > */}
+         <AuthModal/>
+          {/* <div> */}
+           {/* { hover_on_profile ? `Login` :<img src={logo} className={classes.for_menu}></img> }
             </div> 
             <div>
-            { hover_on_profile ? `Login` :<img src={profile_logo} className={classes.for_profile}></img>}
-            </div>
+            { hover_on_profile ? `Login` :<img src={profile_logo} className={classes.for_profile}></img>} */}
+            {/* </div> */}
      
-        </li>
+        {/* </li> */}
       </ul>
     </div>
   );
